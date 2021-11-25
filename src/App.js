@@ -7,15 +7,15 @@ function App() {
 		<>
 			<div className="container">
 				<div className="square-wrapper">
-					<Square />
-					<Square />
-					<Square />
-					<Square />
-					<Square />
-					<Square />
-					<Square />
-					<Square />
-					<Square />
+					<Square iconName={"Piano"} />
+					<Square iconName={"Guitar"} />
+					<Square iconName={"DrumKit"} />
+					<Square iconName={"ClassicGuitar"} />
+					<Square iconName={"Drum"} />
+					<Square iconName={"MusicNote"} />
+					<Square iconName={"Trumpet"} />
+					<Square iconName={"Lolo"} />
+					<Square iconName={"Tunes"} />
 				</div>
 				<div className="buttons-wrapper">
 					<ActionButton action="Play" />

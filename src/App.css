@@ -1,7 +1,7 @@
 .square-wrapper {
 	display: grid;
 	grid-template-columns: repeat(3, 100px);
-	grid-gap: 10px 10px;
+	grid-gap: 20px 20px;
 	transform: rotate(45deg);
 	position: absolute;
 	left: 200px;
@@ -11,7 +11,16 @@
 .square {
 	width: 100px;
 	height: 100px;
-	background-color: rgb(45, 212, 253);
+	background-color: rgb(29, 51, 56);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 11px 10px 9px 1px rgba(103, 103, 103, 0.4);
+	border-radius: 8px;
+}
+
+.icon {
+	transform: rotate(-45deg);
 }
 
 .square:hover {
