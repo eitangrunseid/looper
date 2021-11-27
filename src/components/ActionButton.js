@@ -5,7 +5,7 @@ function ActionButton({ action }) {
 	const context = useContext(AppContext);
 
 	const handleClick = () => {
-		console.log(context.loops);
+		// console.log(context.loops);
 		context.loops.map((loop, i) => {
 			if (action === "Play") {
 				if (loop.status === "active") {
