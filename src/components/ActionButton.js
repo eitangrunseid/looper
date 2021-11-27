@@ -4,8 +4,6 @@ import AppContext from "../context/AppContext";
 function ActionButton({ action }) {
 	const context = useContext(AppContext);
 
-	useEffect(() => {}, []);
-
 	const handleClick = () => {
 		console.log(context.loops);
 		context.loops.map((loop, i) => {

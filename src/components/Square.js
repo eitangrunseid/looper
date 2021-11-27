@@ -13,6 +13,8 @@ function Square({ iconName }) {
 	const [isOn, setIsOn] = useState(false);
 	const [isOff, setIsOff] = useState(true);
 
+	const [color, setColor] = useState("");
+
 	const checkIconsNames = () => {
 		switch (iconName) {
 			case "Drum":
@@ -46,9 +48,11 @@ function Square({ iconName }) {
 			if (!isOn) {
 				if (element.name === iconName) {
 					element.status = "active";
+					setColor("on");
 				}
 			} else {
 				element.status = "Inactive";
+				setColor("");
 			}
 			if (!isOff) {
 				if (element.name === iconName) {
@@ -61,7 +65,7 @@ function Square({ iconName }) {
 
 	return (
 		<div className="square-wrap">
-			<div className="square" onClick={handleClick}>
+			<div className={`square ${color}`} onClick={handleClick}>
 				<p className="icon">{checkIconsNames()}</p>
 			</div>
 		</div>

@@ -35,3 +35,7 @@
 	margin: 0 10px;
 	width: 40px;
 }
+
+.on {
+	background-color: rgb(126, 176, 250);
+}

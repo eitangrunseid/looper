@@ -1,6 +1,3 @@
-import React, { useContext, useEffect } from "react";
-import AppContext from "../context/AppContext";
-
 import groove from "../assets/audio/GrooveB_120bpm_Tanggu.mp3";
 import funk from "../assets/audio/funk.mp3";
 import stutter from "../assets/audio/120_stutter_breakbeats_16.mp3";
@@ -10,9 +7,6 @@ import fud from "../assets/audio/FUD_120_StompySlosh.mp3";
 import maze from "../assets/audio/MazePolitics_120_Perc.mp3";
 import pass from "../assets/audio/PAS3GROOVE1.03B.mp3";
 import silent from "../assets/audio/SilentStar_120_Em_OrganSynth.mp3";
-
-// function AudioLoop() {
-// const context = useContext(AppContext);
 
 const grooveAudio = new Audio(groove);
 const funkAudio = new Audio(funk);
@@ -50,11 +44,3 @@ export const loops = [
 	{ name: "Tunes", status: "Inactive", color: "red", audioObj: silentAudio },
 	{ name: "Lolo", status: "Inactive", color: "red", audioObj: passAudio }
 ];
-// useEffect(() => {
-// 	context.setLoops(loops);
-// }, []);
-
-// return <div></div>;
-// }
-
-// export default AudioLoop;
