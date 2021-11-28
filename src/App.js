@@ -28,27 +28,28 @@ function App() {
 					setIsRecording: setIsRecording
 				}}
 			>
+				<h1 className="title">Welcome To Grooveo Best Looper</h1>
 				<div className="container">
-					<div className="square-wrapper">
-						<Square iconName={"Piano"} />
-						<Square iconName={"Guitar"} />
-						<Square iconName={"DrumKit"} />
-						<Square iconName={"ClassicGuitar"} />
-						<Square iconName={"Drum"} />
-						<Square iconName={"MusicNote"} />
-						<Square iconName={"Trumpet"} />
-						<Square iconName={"Lolo"} />
-						<Square iconName={"Tunes"} />
-					</div>
-				</div>
-				<div className="buttons-container">
-					<div className="buttons-wrapper">
-						<ActionButton action="Play" />
-						<ActionButton action="Stop" />
-					</div>
-					<div className="record-wrapper">
-						<RecordButton />
-						<PlayRecord />
+					<div className="buttons-container">
+						<div className="record-wrapper">
+							<RecordButton />
+							<PlayRecord />
+						</div>
+						<div className="square-wrapper">
+							<Square iconName={"Piano"} />
+							<Square iconName={"Guitar"} />
+							<Square iconName={"DrumKit"} />
+							<Square iconName={"ClassicGuitar"} />
+							<Square iconName={"Drum"} />
+							<Square iconName={"MusicNote"} />
+							<Square iconName={"Trumpet"} />
+							<Square iconName={"Lolo"} />
+							<Square iconName={"Tunes"} />
+						</div>
+						<div className="buttons-wrapper">
+							<ActionButton action="Play" />
+							<ActionButton action="Stop" />
+						</div>
 					</div>
 				</div>
 			</AppContext.Provider>

@@ -1,10 +1,14 @@
 .container {
 	display: flex;
 	justify-content: center;
+	margin-top: 120px;
+}
+
+.title {
+	text-align: center;
 }
 
 .container-wrapper {
-	/* display: flex; */
 	justify-content: center;
 	width: 500px;
 }
@@ -42,7 +46,10 @@
 }
 
 .record-wrapper {
-	margin-right: 40px;
+	margin-right: 130px;
+	width: 40px;
+	margin-top: 50px;
+	display: flex;
 }
 
 .button {
@@ -52,7 +59,11 @@
 	border-radius: 10px;
 	padding: 10px;
 	border: none;
-	margin: 10px;
+	margin: 50px 10px;
+}
+
+.button:hover {
+	cursor: pointer;
 }
 
 .on {
@@ -64,24 +75,41 @@
 	justify-content: space-around;
 }
 
-@media only screen and (max-width: 500px) {
+.play-session {
+	margin-top: 5px;
+	height: 50px;
+	background-color: rgb(99, 99, 245);
+}
+
+.play-session:hover {
+	cursor: pointer;
+}
+
+.label {
+	font-weight: bold;
+}
+
+@media only screen and (max-width: 550px) {
 	.container {
 		width: 100%;
+		margin-top: 60px;
 	}
 	.square-wrapper {
-		grid-template-columns: repeat(3, 50px);
-		grid-gap: 15px 15px;
+		grid-template-columns: repeat(3, 55px);
+		grid-gap: 10px 10px;
+		margin: 40px;
 	}
 	.square {
-		width: 60px;
-		height: 60px;
+		width: 55px;
+		height: 55px;
 	}
 	.buttons-container {
-		width: 100%;
-		justify-content: space-between;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
 	}
 	.button {
-		width: 40px;
+		width: 60px;
 		padding: 5px;
 		margin: 40px 10px;
 	}

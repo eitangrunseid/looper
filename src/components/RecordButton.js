@@ -21,7 +21,8 @@ function RecordButton() {
 			<FormGroup>
 				<FormControlLabel
 					control={<Switch onChange={handleChange} defaultChecked />}
-					label="Record Session"
+					label={`${context.isRecording ? "Record is on" : "Record is off"}`}
+					labelPlacement="start"
 				/>
 			</FormGroup>
 		</div>

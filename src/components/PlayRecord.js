@@ -6,6 +6,7 @@ function PlayRecord() {
 
 	const handlePlay = () => {
 		context.recordSession.map((record) => {
+			console.log("record:", record);
 			if (record) {
 				record.audioObj.play();
 			}
@@ -16,7 +17,7 @@ function PlayRecord() {
 		<>
 			{!context.isRecording ? (
 				<button onClick={handlePlay} className="button play-session">
-					Play Session
+					Play Record
 				</button>
 			) : null}
 		</>

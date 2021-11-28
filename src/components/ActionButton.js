@@ -16,7 +16,6 @@ function ActionButton({ action }) {
 				loop.audioObj.currentTime = 0;
 			}
 		});
-
 		if (context.isRecording) {
 			context.setRecordSession(recordArray);
 		}
