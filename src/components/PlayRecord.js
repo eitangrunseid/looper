@@ -15,7 +15,7 @@ function PlayRecord() {
 	return (
 		<>
 			{!context.isRecording ? (
-				<button onClick={handlePlay} className="button">
+				<button onClick={handlePlay} className="button play-session">
 					Play Session
 				</button>
 			) : null}
