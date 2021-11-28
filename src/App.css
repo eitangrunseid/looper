@@ -1,11 +1,14 @@
+.container {
+	display: flex;
+	justify-content: center;
+}
+
 .square-wrapper {
 	display: grid;
 	grid-template-columns: repeat(3, 100px);
 	grid-gap: 20px 20px;
 	transform: rotate(45deg);
-	position: absolute;
-	left: 200px;
-	top: 200px;
+	margin-top: 140px;
 }
 
 .square {
@@ -29,13 +32,34 @@
 
 .buttons-wrapper {
 	display: flex;
+	justify-content: space-between;
 }
 
 .button {
 	margin: 0 10px;
-	width: 40px;
+	width: 90px;
+	margin: 0 150px;
+	background-color: rgb(99, 99, 245);
+	color: white;
+	border-radius: 10px;
+	padding: 10px;
+	border: none;
 }
 
 .on {
 	background-color: rgb(126, 176, 250);
+}
+
+@media only screen and (max-width: 500px) {
+	.container {
+		width: 100%;
+	}
+	.square-wrapper {
+		grid-template-columns: repeat(3, 50px);
+		grid-gap: 15px 15px;
+	}
+	.square {
+		width: 60px;
+		height: 60px;
+	}
 }

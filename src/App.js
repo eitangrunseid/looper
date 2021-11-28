@@ -26,10 +26,10 @@ function App() {
 						<Square iconName={"Lolo"} />
 						<Square iconName={"Tunes"} />
 					</div>
-					<div className="buttons-wrapper">
-						<ActionButton action="Play" />
-						<ActionButton action="Stop" />
-					</div>
+				</div>
+				<div className="buttons-wrapper">
+					<ActionButton action="Play" />
+					<ActionButton action="Stop" />
 				</div>
 			</AppContext.Provider>
 		</div>
