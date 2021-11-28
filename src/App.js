@@ -28,7 +28,7 @@ function App() {
 					setIsRecording: setIsRecording
 				}}
 			>
-				<h1 className="title">Welcome To Grooveo Best Looper</h1>
+				<h1 className="title">Welcome To Grooveo Best Looper machine</h1>
 				<div className="container">
 					<div className="buttons-container">
 						<div className="record-wrapper">
