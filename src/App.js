@@ -5,14 +5,28 @@ import ActionButton from "./components/ActionButton";
 import AppContext from "./context/AppContext";
 import { loops as audioData } from "./data/audioData";
 
+import RecordButton from "./components/RecordButton";
+import PlayRecord from "./components/PlayRecord";
+
 function App() {
 	const [loops, setLoops] = useState(audioData);
 	const [color, setColor] = useState("");
+	const [recordSession, setRecordSession] = useState([]);
+	const [isRecording, setIsRecording] = useState(true);
 
 	return (
-		<div>
+		<>
 			<AppContext.Provider
-				value={{ loops: loops, setLoops: setLoops, color: color, setColor }}
+				value={{
+					loops: loops,
+					setLoops: setLoops,
+					color: color,
+					setColor,
+					recordSession: recordSession,
+					setRecordSession: setRecordSession,
+					isRecording: isRecording,
+					setIsRecording: setIsRecording
+				}}
 			>
 				<div className="container">
 					<div className="square-wrapper">
@@ -27,12 +41,18 @@ function App() {
 						<Square iconName={"Tunes"} />
 					</div>
 				</div>
-				<div className="buttons-wrapper">
-					<ActionButton action="Play" />
-					<ActionButton action="Stop" />
+				<div className="buttons-container">
+					<div className="buttons-wrapper">
+						<ActionButton action="Play" />
+						<ActionButton action="Stop" />
+					</div>
+					<div className="record-wrapper">
+						<RecordButton />
+						<PlayRecord />
+					</div>
 				</div>
 			</AppContext.Provider>
-		</div>
+		</>
 	);
 }
 

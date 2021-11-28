@@ -5,18 +5,21 @@ function ActionButton({ action }) {
 	const context = useContext(AppContext);
 
 	const handleClick = () => {
-		console.log(context.loops);
-		context.loops.map((loop, i) => {
+		const recordArray = context.loops.map((loop, i) => {
 			if (action === "Play") {
 				if (loop.status === "active") {
 					loop.audioObj.play();
-					console.log(loop.name);
+					return loop;
 				}
 			} else {
 				loop.audioObj.pause();
 				loop.audioObj.currentTime = 0;
 			}
 		});
+
+		if (context.isRecording) {
+			context.setRecordSession(recordArray);
+		}
 	};
 
 	return (
